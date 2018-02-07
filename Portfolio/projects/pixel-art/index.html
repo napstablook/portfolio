@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Pixel Art Maker!</title>
+        
+        <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One|Montserrat" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+        <link rel="stylesheet" href="../../css/normalize.css">
+        <link rel="stylesheet" href="css/spectrum.css">
+        <link rel="stylesheet" href="css/material.css">
+        <link rel="stylesheet" href="css/styles.css">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src='javascript/spectrum.js'></script>
+    </head>
+    <body>
+        <h1>Pixel Art Maker</h1>
+        <div class="overlay">
+            <i class="arrow-back material-icons md-48 md-light">arrow_back</i>
+            <h2>Choose Grid Size</h2>
+            <form id="submit-form" class="size-picker">
+                <label for="grid-height">Grid Height:</label>
+                <input type="number" id="grid-height" name="height" value="20">
+                <label for="grid-width">Grid Width:</label>
+                <input type="number" id="grid-width" name="width" value="20">
+                <button type="submit" id="draw">Draw Grid</button>
+            </form>
+
+            <div class="color-options">
+                <h2>Pick A Color</h2>
+                <!--<input type='text' id="color-picker" value="#111">-->
+                <!--<button type="button" id="choose">Choose</button>-->
+                <input type="color" id="color-picker" value="#1a1a1a">
+                <h3>Most Used Colors</h3>
+                <ul id="most-used-colors">
+                    <li><span class="most-items most-item1"></span></li>
+                    <li><span class="most-items most-item2"></span></li>
+                    <li><span class="most-items most-item3"></span></li>
+                    <li><span class="most-items most-item4"></span></li>
+                </ul>
+                <h3>Recent Colors</h3>
+                <ul id="recent-colors">
+                    <li><span class="recent-items recent-item1"></span></li>
+                    <li><span class="recent-items recent-item2"></span></li>
+                    <li><span class="recent-items recent-item3"></span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="icons">
+            <i class="clear material-icons md-48 md-light">clear</i>
+            <i class="settings material-icons md-48 md-light">settings</i>
+        </div>
+        <div class="table-style">
+            <table id="pixel-canvas"></table>
+        </div>
+        <script src="javascript/design.js"></script>
+    </body>
+</html>

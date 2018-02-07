@@ -1,0 +1,118 @@
+@media (min-width: 36em) {
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .wrapper {
+    padding: 0 5% 0;
+    max-width: 50rem;
+    margin: 0 auto;
+  }
+  
+  /* ---- Header ---- */
+  
+  .heading {
+    font-size: .95em;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .main-nav {
+    padding: 0
+  }
+
+  /* ---- Work ---- */
+  
+  .gallery {
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  
+  .gallery li {
+    box-sizing: border-box;
+    flex: 1 50%;
+    max-width: 50%;
+  }
+  
+  .item:nth-child(odd) {
+    padding: 1em 1em 1em 0;
+  }
+  
+  .item:nth-child(even) {
+    padding: 1em 0 1em 1em;
+  }
+  
+  .item-1 figure {
+    margin-top: 0; /* removes style from mobile style */
+  }
+
+  .item-3 figure {
+    margin-bottom: 0; /* removes style from mobile style */
+  }
+  
+  /* removes style from mobile style */
+  figure {
+    margin: 0;
+    border: none;
+    box-shadow: none;
+  }
+  
+  /* Hover effect on figures */
+  
+  figure {
+    position: relative;
+  }
+  
+  figure img {
+    border-radius: 1.5%;
+  }
+  
+  figcaption {
+    position: absolute;
+    background: rgba(0, 0, 0, .5);
+    border-radius: 1.5%;
+    color: white;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity .2s;
+  }
+  
+  figure:hover figcaption {
+    opacity: 1;
+  }
+  
+}
+
+
+@media (min-width: 50em) {
+  
+  .heading {
+    font-size: 1.05em; 
+  }
+  
+  nav a {
+    padding: 2em;
+  }
+  
+  .gallery {
+    justify-content: space-between
+  }
+  
+  .gallery li {
+    flex: 1;
+    max-width: 32%;
+  }
+  
+  .item:nth-child(odd) {
+    padding: 0;
+  }
+  
+  .item:nth-child(even) {
+    padding: 0;
+  }
+
+}

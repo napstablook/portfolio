@@ -1,0 +1,65 @@
+/* add your CSS here */
+/* GENERAL */
+
+span {
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+}
+
+
+
+/* FORMATTING */
+
+.card {
+  width: 300px;
+  padding: 1em;
+  margin: auto;
+}
+
+h3 {
+  margin: 0 0 1rem;
+  padding: 0.25em;
+}
+
+img {
+  display: block;
+  width: 296px;
+  margin: 0 0 1em;
+}
+
+.info {
+  padding: 0 1em;
+}
+
+ul {
+  padding: 0;
+  margin: auto;
+}
+
+
+
+/* COLOR & FLAIR */
+
+.card {
+  font-family: 'Helvetica', 'Open Sans', sans-serif;
+  line-height: 1.25em;
+  background: #f3f3f3;
+  border: 2px solid #ccc;
+  /* box-shadow: 0px 15px 10px -7.5px #ddd; */
+}
+
+h3 {
+  background: rgba(5, 255, 176, 1);
+  box-shadow: 5px 3.75px;
+}
+
+img {
+  border: 2px solid rgba(49, 7, 54, 1);
+}
+
+.info {
+  border: 2px solid rgba(49, 7, 54, 1);
+}

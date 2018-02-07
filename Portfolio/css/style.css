@@ -1,0 +1,190 @@
+/* ---- GENERAL ---- */
+
+body {
+  line-height: 1.5;
+}
+
+.content {
+  padding: 1em 1em 1.5em;
+  max-width: 50em;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;  
+  /* removes default space under image */
+  /* could also do something w/ vertical-align to remove*/
+}
+
+/* ---- FLEXBOX ---- */
+
+/* Heading */
+
+.heading,
+.main-nav {
+  display: flex;
+}
+
+.heading {
+  text-align: center;
+  flex-direction: column;
+}
+
+.main-nav li {
+  flex: 1;
+}
+
+/* Work */
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Footer */
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+/* ---- GENERAL II ---- */
+
+/* Header */
+
+header {
+  background: #f2f2f2;
+}
+
+.heading {
+  padding: 1em 0 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+nav ul {
+  padding-top: .5em;
+}
+
+nav a {
+  display: block;
+  padding: 1.1em;
+  font-size: 1.1em;
+}
+
+/* About */
+
+/* Reducing space between paragraphs */
+#about h2 {
+  margin-bottom: .5em;
+}
+
+#about p:not(:last-child) {
+  margin: .5em 0;
+}
+
+#about p:last-child {
+  margin-top: .5em;
+}
+
+/* Work */
+
+figure {
+  margin: 1em 0;
+  border-radius: 1.2%;
+}
+
+figure img {
+  display: block;
+  border-radius: 1.2% 1.2% 0 0;
+}
+
+figcaption {
+  padding: 1em;
+}
+
+/*
+figcaption p {
+  margin: 0;
+}
+*/
+
+.item-1 figure {
+  margin-top: .3em;
+}
+
+.item-3 figure {
+  margin-bottom: .3em;
+}
+
+/* Footer */
+
+footer {
+  padding: .3em 0;
+}
+
+/* ---- COLORS ---- */
+
+header {
+  background: #f2f2f2;
+}
+
+a {
+  color: #E05B9E;
+}
+
+figure {
+  border: 1px solid #f6f6f6;
+  background: #fafafa;
+  box-shadow: 0 5px 18px -10px #222;
+}
+
+footer {
+  background: #f2f2f2;
+}
+
+/* ---- TYPOGRAPHY ---- */
+
+body {
+  font-family: 'Raleway', 'Microsoft Yahei', sans-serif;
+}
+
+h1, h2 {
+  font-family: 'Zilla Slab', cursive;
+}
+
+h1 small {
+  text-decoration: line-through;
+}
+
+h1 span {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: -2px;
+}

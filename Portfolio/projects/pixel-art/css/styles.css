@@ -1,0 +1,220 @@
+/* 
+TODO: 
+Make it actually pretty. Plan out how the page should look and work. 
+Organize this and base style on MATERIAL DESIGN
+*/
+
+/* --- Formatting --- */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4em;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+h1 {
+    margin: 1em auto 0.5em;
+}
+
+.material-icons {
+    margin: 0 0.5em;
+    cursor: pointer;
+}
+
+/* --- Table --- */
+.table-style {
+    margin-top: 2em;
+    box-shadow: 0px 4px 36px -4px #3cf;
+}
+
+table {
+    border-collapse: collapse;
+    padding: 1em;
+}
+
+td {
+    width: 20px;
+    cursor: pointer;
+}
+
+tr {
+    height: 20px
+}
+
+
+/* --- Overlay & Contents --- */
+.overlay {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #f8f8f8;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.arrow-back {
+    position: fixed;
+    top: 1em;
+    left: 1em;
+}
+
+.size-picker {
+    margin-bottom: 0.5em;
+}
+
+/* Form elements */
+input[type=number] {
+    width: 5em;
+    border-radius: 4px 4px 0 0;
+    padding: 0.2em 0.5em;
+    margin-right: 0.5em;
+}
+
+button {
+    padding: 0.2em 1em;
+    cursor: pointer;
+}
+.size-picker button {
+    margin-left: 0.5em;
+}
+
+#go-button {
+    margin-top: 1em;
+}
+
+/* Pick a color section */
+.color-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+span {
+    cursor: pointer;
+    display: block;
+    height: 2em;
+    width: 2em;
+    padding: 0;
+    border: 0.5em solid gray;
+    border-radius: 50%;
+    box-shadow: 0px 2px 18px -2px #3cf;
+    margin: 0 0.5em;
+    background: lightblue;
+}
+
+.most-item1 {
+    background: #1a1a1a;
+}
+
+.most-item2,
+.recent-item1 {
+    background: #1fa;
+}
+
+.most-item3,
+.recent-item2 {
+    background: #3cf;
+}
+
+.most-item4,
+.recent-item3 {
+    background: yellow;
+}
+
+/* --- Colors & Typography --- */
+/*
+Colors:
+black: #1a1a1a
+white: #f8f8f8
+blue accent: #3cf
+gray: gray
+*/
+body {
+    font-family: "Montserrat", sans-serif;
+    background: #1a1a1a;
+    color: #f8f8f8;
+}
+
+h1 {
+    font-family: "Rubik Mono One", monospace;
+    font-size: 3em;
+}
+
+.table-style {
+    border: 16px solid gray;
+}
+
+table {
+    background: #f8f8f8;
+    box-shadow: 0px 0px 4px -2px #1a1a1a;
+}
+
+td {
+    border: 0.5px solid #1a1a1a;
+    transition: background 0.2s;
+}
+
+td:hover {
+    background: #888;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type=number] {
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.25);
+    border: 1px solid #f8f8f8;
+    color: #f8f8f8;
+    border-bottom: 2px solid #f8f8f8;
+}
+
+button {
+    font-weight: bold;
+    color: #f8f8f8;
+    background: #1a1a1a;
+    border: 1px solid #1a1a1a;
+    border-radius: 4px 4px 0 0; 
+    border-bottom: 2px solid #1a1a1a;
+}
+
+.size-picker button {
+    box-shadow: 0px 2px 18px -2px #3cf;
+    transition: box-shadow 0.5s;
+}
+
+.size-picker button:hover {
+    box-shadow: 0px 4px 36px -4px #3cf;
+}
+
+/* remove spinner from input[type=number]*/
+/* For Firefox */
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+/* Webkit browsers like Safari and Chrome */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

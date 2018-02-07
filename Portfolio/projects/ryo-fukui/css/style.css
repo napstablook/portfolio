@@ -1,0 +1,114 @@
+/*
+color palette:
+#13491f (dark green),
+#f6eef4 (off-white),
+#ff4f14 (scenery bright red),
+#141311 (scenery black),
+#c71c15 (scenery link red)
+*/
+
+/*
+Retro-ish fonts that I liked:
+Atomic+Age|Audiowide|Exo+2:300|Jura|Monoton|Orbitron|Oxygen+Mono|Share+Tech+Mono|VT323|Warnes
+*/
+
+header {
+  padding: .25em 0;
+  margin-bottom: 1em;
+}
+
+h3 {
+  font-weight: lighter;
+  margin: 1rem 0;
+  padding-bottom: .5em;
+  border-bottom: 3px solid #13491f;
+}
+
+/* ALBUM COVER *******************/
+
+/*.image {
+  padding: .5em 29px 0 0;
+}
+
+
+.image figure {
+  background: #f6f6f6;
+  margin: 0;
+  padding: 0;
+}
+
+.image figcaption {
+  padding: 0 .5rem ;
+}*/
+
+/* MUSIC LINKS *******************/
+
+.music-links div {
+  margin: 1em 0;
+  border-right: 1px solid #73a97f;
+}
+
+.music-links div:last-child {
+  border: none;
+}
+
+/* FOOTER  *******************/
+
+footer {
+  padding: 0 1em 1em;
+}
+
+footer p {
+  padding-top: 1em;
+}
+
+/* FONTS *******************/
+
+body {
+  font-family: 'Exo 2', sans-serif;
+}
+
+.display-2 {
+  font-family: 'MS Gothic Regular', 'Meiryo UI', 'Yu Gothic';
+}
+
+h1, h2, h3 {
+  font-family: 'Audiowide', monospace;
+  /*font-size: .9rem;*/
+}
+
+a {
+  /*font-family: 'Atomic Age', cursive;*/
+  /*font-family: 'Audiowide', monospace;*/
+  /*font-size: .9em;*/
+}
+
+footer {
+  color: #73997f;
+}
+
+
+/* COLORS *******************/
+
+body {
+  background-color: #f6eef4;
+  color: #13491f;
+}
+
+header {
+  background: #141311;
+  color: #ff4f14;
+}
+
+a {
+  color: #c71c15;
+}
+
+a:hover {
+  color: #008700;
+}
+
+footer {
+  /*background-color: #141311;*/
+  /*color: #f6eef4;*/
+}

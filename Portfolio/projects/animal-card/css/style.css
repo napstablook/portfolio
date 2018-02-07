@@ -1,0 +1,106 @@
+/* FORMATTING & GENERAL */
+body {
+    background: black;
+}
+
+.card {
+  width: 310px;
+  padding: 1em;
+  margin: auto;
+}
+
+h3 {
+  margin: 0 0 1rem;
+  padding: 0.25em;
+}
+
+img {
+  display: block;
+  width: 300px;
+  margin: 0 0 1em;
+}
+
+.info {
+  padding: 0 1em;
+}
+
+ul {
+  padding: 0;
+  margin: auto;
+}
+
+span {
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+}
+
+
+
+/* TYPOGRAPHY, BOXES, & BORDERS */
+
+.card {
+  font-family: 'Open Sans', 'Oswald', sans-serif;
+  line-height: 1.25em;
+  border: 5px solid #394184;
+  box-shadow: 0px 15px 10px -7.5px #ddd;
+}
+
+h3 {
+  font-family: 'Bangers', cursive;
+  font-size: 1.75em;
+  font-weight: 400;
+  box-shadow: 7px 5px;
+}
+
+img, .info {
+  border: 5px solid rgba(49, 7, 54, 1);
+}
+
+
+
+/* POP/MICKEY INSPIRED COLORS */
+
+/*
+yellow: F9DF54
+denim blue: 2F43B6
+carmine pink: EA5244
+off-white: F1EFEC
+dark slate blue: 394184
+*/
+
+/* polka dot background */
+/* I did steal this, so I can't take credit for it */
+/* Source: https://codepen.io/danichk/pen/YyVeXa */
+.polka-dot-bg {
+  background: #F1EFEC;
+  background-image:
+    radial-gradient(#2F43B6 25%, transparent 0),
+    radial-gradient(#2F43B6 25%, transparent 0);
+  background-size: 15px 15Px;
+  background-position: 0 0, 7.5px 7.5px;
+}
+
+body {
+  background: #fafafa;
+}
+
+.card {
+  color: #394184;
+}
+
+h3 {
+  /* background: #F9DF54; */
+  background: #FDF202;
+  color: #2F43B6;
+}
+
+.info {
+  background: #F1EFEC;
+}
+
+span {
+  color: #EA5244;
+}
